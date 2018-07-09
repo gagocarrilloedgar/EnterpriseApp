@@ -1,0 +1,48 @@
+﻿<Window x:Class="EnterpriseApp.Views.AddWork"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnterpriseApp.Views"
+        mc:Ignorable="d"
+        Title="AddWork" Height="355.816" Width="389.905">
+    <Grid Margin="3,0,1.667,17.667" RenderTransformOrigin="0.493,1.049">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="67,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="47"><Run Text="Name"/><Run Text=" :"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" 
+                 Margin="223,67,0,0" TextWrapping="Wrap" 
+                 Text="New Name" VerticalAlignment="Top" Width="120" 
+                 Name="NewName"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="67,115,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" Height="16"
+                   Width="49" ><Run Text="Content"/><Run Text=":"/></TextBlock>
+
+        <TextBox HorizontalAlignment="Left" Height="89" 
+            Margin="223,114,0,0" TextWrapping="Wrap" 
+            Text="Describe de work content" VerticalAlignment="Top" Width="120" 
+            x:Name="NewContent"/>
+
+        <Button Content="Add" HorizontalAlignment="Left" 
+                Margin="151,269,0,0" VerticalAlignment="Top" 
+                Width="75" Name="Add" Click="Add_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="174,21,0,0" 
+                   TextWrapping="Wrap" VerticalAlignment="Top" 
+                   Height="16" Width="94"><Run Text="Add a New "/><Run Text="Work"/></TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" Margin="67,220,0,0" 
+                   TextWrapping="Wrap" VerticalAlignment="Top" 
+                   Height="16" Width="47"><Run Text="User Id"/><Run Text=" :"/></TextBlock>
+        
+        <ComboBox HorizontalAlignment="Left" Margin="221,218,0,0" 
+                  VerticalAlignment="Top" Width="120"
+                  Name="UserIdList"/>
+
+    </Grid>
+
+</Window>

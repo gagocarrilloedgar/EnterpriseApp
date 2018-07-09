@@ -1,0 +1,57 @@
+﻿<Window x:Class="EnterpriseApp.Views.ModifyViews.ModifyWorkWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnterpriseApp.Views.ModifyViews"
+        mc:Ignorable="d"
+        Title="ModifyWorkWindow" Height="426.154" Width="571.246">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="175,104,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="131" Name="OldName" Text="{Binding Name}"/>
+        <TextBox HorizontalAlignment="Left" Height="61" Margin="174,158,0,0" TextWrapping="Wrap" 
+            Text="{Binding Content}" VerticalAlignment="Top" Width="130" Name="OldContent" />
+
+        <TextBlock HorizontalAlignment="Left" Margin="55,106,0,0" 
+            TextWrapping="Wrap" Text="Name :" 
+            VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="56,160,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"><Run Text="Content"/><Run Text=" :"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="210,47,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"><Run Text="Old "/><Run Text="Wor"/><Run Text="k"/></TextBlock>
+
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="377,104,0,0"
+            TextWrapping="Wrap" Text="New Name" VerticalAlignment="Top"
+            Width="135" x:Name="NewName"/>
+
+        <TextBox HorizontalAlignment="Left" Height="63" Margin="378,158,0,0" 
+            TextWrapping="Wrap" Text="New Surname" VerticalAlignment="Top"
+            Width="135" x:Name="NewContent"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="412,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="New "/><Run Text="Wo"/><Run Text="r"/><Run Text="k"/></TextBlock>
+
+        <Button Content="Save Task" HorizontalAlignment="Left"
+                Margin="273,348,0,0" VerticalAlignment="Top"
+                Width="87" Name="SaveTask" Click="SaveWork_Click"/>
+
+        <ComboBox HorizontalAlignment="Left" Margin="172,285,0,0" VerticalAlignment="Top"
+                  Width="120" Name="SelectedUserId" SelectionChanged="SelectedUserId_SelectionChanged"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="209,245,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" Text="UserId :"/>
+
+        <ComboBox HorizontalAlignment="Left" Margin="385,284,0,0" 
+                  VerticalAlignment="Top" Width="120"  Name="SelectedWorkId" SelectionChanged="SelectedWorkId_SelectionChanged"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="422,245,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"><Run Text="WorkI"/><Run Text="d :"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="56,288,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"><Run Text="Select Id"/><Run Text=" :"/></TextBlock>
+
+    </Grid>
+</Window>
