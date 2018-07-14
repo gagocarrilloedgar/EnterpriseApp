@@ -1,2 +1,1 @@
 # EnterpriseApp
-MVVM App
